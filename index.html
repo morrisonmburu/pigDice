@@ -11,13 +11,33 @@
 
     	<div class="container">
     		<div class="row" id="pig">
+                <div class="col-md-4">
     				<h2 id="Ready-player1">Player 1</h2>
     				<h3>roll result: <span id="scorePlayer1"></span></h3>
     				<h3>score: <span id="winsPlayer1"></span></h3>
-    
+                    <div class="buttons1">
     					<button id="roll" class="btn"> roll dice</button>
-    					<button id="hold" class="btn">hold</button>
+    					<button id="pass" class="btn">pass</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <p id="display"></p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h2 id="Ready-player1">Player 2</h2>
+                        <h3>roll result: <span id="scorePlayer2"></span></h3>
+                        <h3>score: <span id="winsPlayer2"></span></h3>
+
+                        <div class="buttons2">
+                        <button id="roll1" class="btn"> roll dice</button>
+                        <button id="pass1" class="btn">pass</button>
+                        </div>
+                    </div>
     		</div>
+
+            <div class="refresh"> <input type="button" value="Refresh Game" onClick="window.location.reload()" class="btn"></div>
     	</div>
     </body>
 </html>
