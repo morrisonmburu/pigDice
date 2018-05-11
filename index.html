@@ -10,9 +10,28 @@
     <body>
 
     	<div class="container">
+            <div class="well">
+            <form class="form-group" id="entry">
+                <div class="first">
+                <label for="name"> First player:</label>
+                <input type="text" class="form-control" id="player1">
+                <div id="er1"></div>
+                </div>
+
+                <div class="last">
+                <label  for="name2"> Second Player:</label>
+                <input type="text" class="form-control" id="player2">
+                <div id="er2"></div>
+                </div>
+
+                <div class="but">
+                <button type="submit" class="btn"> enter players</button>
+            </div>
+            </form>
+        </div>
     		<div class="row" id="pig">
                 <div class="col-md-4">
-    				<h2 id="Ready-player1">Player 1</h2>
+    				<h2 id="Ready-player1"> </h2>
     				<h3>roll result: <span id="scorePlayer1"></span></h3>
     				<h3>score: <span id="winsPlayer1"></span></h3>
                     <div class="buttons1">
@@ -26,7 +45,7 @@
                     </div>
 
                     <div class="col-md-4">
-                        <h2 id="Ready-player1">Player 2</h2>
+                        <h2 id="Ready-player2"> </h2>
                         <h3>roll result: <span id="scorePlayer2"></span></h3>
                         <h3>score: <span id="winsPlayer2"></span></h3>
 
