@@ -1,0 +1,13 @@
+.refresh{
+	text-align: center;
+	padding-top: 50px;
+	color: blue;
+}
+.container{
+	text-align: center;
+}
+#display{
+	padding-top: 35px;
+	color: green;
+	font-size: 150px;
+}
