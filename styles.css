@@ -11,3 +11,34 @@
 	color: green;
 	font-size: 150px;
 }
+.but{
+	padding-top: 30px;
+}
+body{
+	background-image: url('imgs/14627.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.well{
+	color: white;
+	background-color: transparent;
+}
+#pig{
+	color: white;
+}
+#roll{
+	background-color: #2980B9;
+	color: white; 
+}
+#roll1{
+	background-color: #2980B9;
+	color: white;
+}
+#pass{
+	background-color: #EC7063;
+	color: white;
+}
+#pass1{
+	background-color: #EC7063;
+	color: white;
+}
