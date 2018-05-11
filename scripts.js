@@ -36,8 +36,12 @@ $(document).ready(function(){
 
 		if (score === 0) {
 			alert("your score is zero click pass to switch to player2")
-		}else if(score >= 100) {
-			alert("your score is 100, you win!!!")
+			$(".buttons1").hide();
+			$(".buttons2").show();
+		}else if(score >= 30) {
+			var snd = new Audio('You Win (Voice) - Sound Effect HD.mp3'); 
+			snd .onended = function () {alert("your score is 30, you win!!!");}
+			snd .play();
 		}
 		return score;
 	}
@@ -62,9 +66,14 @@ $(document).ready(function(){
 
 		if (score2 === 0) {
 			alert("your score is zero click pass to switch to player1")
-		}else if(score2 >= 100) {
-			alert("your score is 100, you win!!!")
-		}
+			$(".buttons2").hide();
+			$(".buttons1").show();
+		}else if(score2 >= 30) {
+
+			var snd = new Audio('You Win (Voice) - Sound Effect HD.mp3'); 
+			snd .onended = function () {alert("your score is 30, you win!!!");}
+			snd .play();
+					}
 		return score2;
 	}
 	$("button#roll1").click(function(){
@@ -75,4 +84,34 @@ $(document).ready(function(){
 		$(".buttons1").show();
 	})
 
-	})
+	
+function chkform()
+                {
+
+    var inputs = [];
+    inputs[0] = document.getElementById("player1");
+
+
+    for( i =0; i < inputs.length; i++) {
+
+                  if (inputs[i].value === "" ) 
+                  {
+
+                   document.getElementById("er1").innerHTML = "Please Enter player1!!!"; 
+                   document.getElementById("er1").style.color = "red"; 
+                   document.getElementById("er1").style.display = "block";
+               }
+           }
+}
+	  $("form#entry").submit(function(event) {
+      event.preventDefault();
+      chkform();
+
+	var entry1 = $("#player1").val();
+	var entry2 = $("#player2").val();
+
+$("#Ready-player1").text(entry1).val();
+$("#Ready-player2").text(entry2).val();
+
+})
+        })
