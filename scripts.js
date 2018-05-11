@@ -39,7 +39,7 @@ $(document).ready(function(){
 			$(".buttons1").hide();
 			$(".buttons2").show();
 		}else if(score >= 30) {
-			var snd = new Audio('You Win (Voice) - Sound Effect HD.mp3'); 
+			var snd = new Audio('voices/you win.mp3'); 
 			snd .onended = function () {alert("your score is 30, you win!!!");}
 			snd .play();
 		}
@@ -70,7 +70,7 @@ $(document).ready(function(){
 			$(".buttons1").show();
 		}else if(score2 >= 30) {
 
-			var snd = new Audio('You Win (Voice) - Sound Effect HD.mp3'); 
+			var snd = new Audio('voices/you win.mp3'); 
 			snd .onended = function () {alert("your score is 30, you win!!!");}
 			snd .play();
 					}
