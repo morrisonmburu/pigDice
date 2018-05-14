@@ -40,7 +40,7 @@ $(document).ready(function(){
 			$(".buttons2").show();
 		}else if(score >= 30) {
 			var snd = new Audio('voices/you win.mp3'); 
-			snd .onended = function () {alert("your score is 30, you win!!!");}
+			setTimeout(snd .onended = function () {alert("your score is 30, you win!!!");},1000)
 			snd .play();
 		}
 		return score;
@@ -71,7 +71,7 @@ $(document).ready(function(){
 		}else if(score2 >= 30) {
 
 			var snd = new Audio('voices/you win.mp3'); 
-			snd .onended = function () {alert("your score is 30, you win!!!");}
+			setTimeout(snd .onended = function () {alert("your score is 30, you win!!!");},1000)
 			snd .play();
 					}
 		return score2;
